@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/chemist-warehouse-rebrand/static/css/main.f855e6bc.css",
+    "main.js": "/chemist-warehouse-rebrand/static/js/main.b6be51a6.js",
+    "static/js/453.0f4e3a26.chunk.js": "/chemist-warehouse-rebrand/static/js/453.0f4e3a26.chunk.js",
+    "static/media/logo.svg": "/chemist-warehouse-rebrand/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/chemist-warehouse-rebrand/index.html",
+    "main.f855e6bc.css.map": "/chemist-warehouse-rebrand/static/css/main.f855e6bc.css.map",
+    "main.b6be51a6.js.map": "/chemist-warehouse-rebrand/static/js/main.b6be51a6.js.map",
+    "453.0f4e3a26.chunk.js.map": "/chemist-warehouse-rebrand/static/js/453.0f4e3a26.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.b6be51a6.js"
+  ]
+}

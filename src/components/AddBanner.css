@@ -1,5 +1,97 @@
-.add-banner>img{
+.add-banner{
+    width: 100vw; 
+    height: auto; 
+    overflow: hidden;
+
+}
+
+.banners{
+    width: 400%;
+    display: flex;    
+}
+
+.banners input[type="radio"]{
+    display: none;
+}
+
+.slide{
     width: 100vw;
+    transition: 2s;
+}
+.add-banner>img{
     height: auto;
 }
 
+.slide img{
+    width: 100vw;
+    height: auto;
+} 
+
+/*for manual navigration*/
+
+.navigation{
+    position: absolute;
+    width: 100vw;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border: 2px solid whitesmoke;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#addv1:checked ~ .main{
+    margin-left: 0;
+}
+
+#addv2:checked ~ .main{
+    margin-left: -100vw;
+}
+
+#addv3:checked ~ .main{
+    margin-left: -200vw;
+}
+
+/* css for automated annimation */
+.navigation-auto{
+    position: absolute;
+    width: 100vw;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+.navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#addv1:checked ~ .navigation-auto .auto-btn1{
+    
+}
+#addv2:checked ~ .navigation-auto .auto-btn2{
+    
+}
+#addv3:checked ~ .auto .auto-btn3{
+    
+}

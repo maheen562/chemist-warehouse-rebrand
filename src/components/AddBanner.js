@@ -42,7 +42,7 @@ function AddBanner() {
           <label for="addv3" className="manual-btn"></label>
         </div>
 
-        {/* {
+        {
             setInterval(function(){
                 const addv = document.getElementById('addv' + counter)
                 if(addv){
@@ -53,7 +53,7 @@ function AddBanner() {
                     counter=1;
                 }
             },5000)
-        } */}
+        }
     </div>
   );
 }

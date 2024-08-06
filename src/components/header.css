@@ -70,3 +70,58 @@ a{
     font-size: medium;
 
 }
+
+.catagories{
+    background-color: yellow;
+    padding: 1px;
+    color: black;
+}
+.catagories>ul{
+    display: flex;
+    list-style-type: none;
+    gap: calc((100vw/13));
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+
+}
+
+.catagories>a{
+    text-decoration: none;
+    color: black;
+}
+
+.highlighted-catagory{
+}
+
+.below-header{
+    padding: 1px;
+}
+.below-header>ul{
+    list-style-type: none;
+    display: flex;
+}
+.below-header>ul>li{
+    display: flex;
+}
+.below-header>ul>li>img{
+    height: 70px;
+    width: auto;
+    padding:10px;
+}
+.below-header>ul>li>div{
+    width: 300px;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+}
+.below-header>ul>li>div>p:hover{
+    text-decoration: underline;
+}
+.bold{
+    font-weight: bold;
+}
+.tiny-font{
+    font-size: smaller;
+    color: gray;
+}

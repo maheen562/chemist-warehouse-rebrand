@@ -1,0 +1,79 @@
+
+.heading{
+    padding-left: 5vw;
+    text-align: left;
+}
+
+.products>ul{
+    list-style-type: none;
+}
+.product-padding{
+    padding: 5px
+}
+
+.product{
+    width: 300px;
+    height: 550px;
+    border:2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.product img{
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.product h2{
+    text-align: left;
+}
+
+.product-price{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.product-description ul{
+    /* list-style-type: none; */
+}
+
+.product-description li{
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FF0000"><path d="M9 19c-.26 0-.51-.1-.71-.29l-6-6A.996.996 0 1 1 3.7 11.3l5.29 5.29L20.28 5.3a.996.996 0 1 1 1.41 1.41l-12 12c-.2.2-.45.29-.71.29Z"></path></svg>');
+    text-align: left;
+    font-size: smaller;
+    color: rgb(66, 65, 65);
+}
+
+.product-description li::marker{
+    font-size: 1.5em;
+}
+
+.promotion {
+    position: relative;
+    display: flex; /* Add this line */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+    width: 80%;
+    color: white;
+    height: 22px; /* Add a height to make it more visible */
+    margin: 0 auto; /* Center horizontally within the parent */
+    
+}
+
+.promotion p{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.buy-now-btn{
+    background-color: red;
+    color: yellow;
+    width:85%;
+    border-radius:10px;
+    text-align: center;
+}
+

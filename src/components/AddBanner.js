@@ -54,6 +54,8 @@ function AddBanner() {
                 }
             },5000)
         }
+        
+
     </div>
   );
 }

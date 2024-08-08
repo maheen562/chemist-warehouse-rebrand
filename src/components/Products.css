@@ -6,9 +6,10 @@
 
 .products>ul{
     list-style-type: none;
+    display: flex;
 }
 .product-padding{
-    padding: 5px
+    padding: 10px
 }
 
 .product{

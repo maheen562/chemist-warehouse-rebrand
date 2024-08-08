@@ -17,6 +17,7 @@
     border:2px solid black;
     padding: 5px;
     border-radius: 10px;
+    position: relative;
     align-items: center;
     justify-content: center;
 }
@@ -71,9 +72,21 @@
 
 .buy-now-btn{
     background-color: red;
+    border: 1px solid red;
     color: yellow;
     width:85%;
     border-radius:10px;
     text-align: center;
+    position: absolute;
+    height:33px;
+    top:1px;
+    font-size: large;
+    font-weight: bold;
+    transform: translate(-50%, -10%);
+    top: 90%;
 }
+/* 
+.buy-now-btn p{
+    text-align: center;
 
+} */

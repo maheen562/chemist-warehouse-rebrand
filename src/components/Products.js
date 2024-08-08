@@ -3,6 +3,12 @@ import "./Products.css";
 import prod1 from "../assets/2DF_200.jpg";
 
 const vitaminProducts = {
+  productImage: prod1,
+  name: "Swisse Ultiboost Calcium+Vitamin D 150 Tablets",
+  price : "17.09",
+  discounted : true,
+  priceDiscounted: "17.00" ,
+  promotionSticker : false,
   description: [
     "Contains Calcium Carbonate, Vitamin D3",
     "Increased Bone and joint health",
@@ -24,11 +30,14 @@ function Products() {
           <li>
             <div className="product-padding">
               <div className="product" id="prod1">
-                <img src={prod1} alt="prod1" />
-                <h4>Swisse Ultiboost Calcium+Vitamin D 150 Tablets</h4>
-                <span className="product-price">$17.09</span>
+                <img src={vitaminProducts.productImage} alt="prod1" />
+                <h4>{vitaminProducts.name}</h4>
+                <span className="product-price">{vitaminProducts.price}</span>
+                {
+                
+                }
                 <div className="promotion">
-                    <p>$17.00 Off RRP!</p>
+                  <p>$<span>{vitaminProducts.priceDiscounted}</span> Off RRP!</p>
                 </div>
                 <div className="product-description">
                   <ul>
@@ -37,9 +46,7 @@ function Products() {
                     ))}
                   </ul>
                 </div>
-                <button className="buy-now-btn">
-                    <h2>Buy Now</h2>
-                </button>
+                <button className="buy-now-btn">Buy now </button>
               </div>
             </div>
           </li>

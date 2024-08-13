@@ -5,6 +5,7 @@ import prod2 from "../assets/3DF_200.jpg";
 import prod3 from "../assets/2DF_200 (1).jpg";
 import prod4 from "../assets/2DF_200 (2).jpg";
 import Sticker from "../assets/50.png";
+import Slider from "react-slick";
 
 const vitaminProducts = [
   {
@@ -68,47 +69,50 @@ const vitaminProducts = [
 function Products() {
   return (
     <div>
-      <div className="heading">
-        <h2>
-          Buy our <span>PREMIUM Vitamins </span>Range
-        </h2>
-      </div>
       <div className="product-container">
+        <div className="heading">
+          <h2>
+            Buy our <span>PREMIUM Vitamins </span>Range
+          </h2>
+        </div>
         <div className="products">
-          <div className="slide-wrapper">
-            <ul>
-              {vitaminProducts.map((product, pindex) => (
-                <li id={pindex}>
-                  <div className="product-padding">
-                    <div className="product" id="prod1">
-                      <img src={product.productImage} alt="prod1" />
-                      <h4>{product.name}</h4>
-                      <span className="product-price">${product.price}</span>
-                      {product.discounted && (
-                        <div className="promotion">
-                          <p>
-                            $<span>{product.priceDiscounted}</span> Off RRP!
-                          </p>
-                        </div>
-                      )}
-
-                      <div className="product-description">
-                        <ul>
-                          {product.description.map((item, index) => (
-                            <li key={index}>{item}</li>
-                          ))}
-                        </ul>
+          <ul>
+            {vitaminProducts.map((product, pindex) => (
+              <li id={pindex}>
+                <div className="product-padding">
+                  <div className="product" id="prod1">
+                    <img src={product.productImage} alt="prod1" />
+                    <h4>{product.name}</h4>
+                    <span className="product-price">${product.price}</span>
+                    {product.discounted && (
+                      <div className="promotion">
+                        <p>
+                          $<span>{product.priceDiscounted}</span> Off RRP!
+                        </p>
                       </div>
-                      <button className="buy-now-btn">Buy now </button>
-                    </div>
-                    {product.promotionSticker && (
-                      <img className="sticker-50" src={Sticker} />
                     )}
+
+                    <div className="product-description">
+                      <ul>
+                        {product.description.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <button className="buy-now-btn">Buy now </button>
                   </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+                  {product.promotionSticker && (
+                    <img className="sticker-50" src={Sticker} />
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="heading">
+          <h2>
+            Buy our <span>PREMIUM Medicine </span>Range
+          </h2>
         </div>
       </div>
     </div>

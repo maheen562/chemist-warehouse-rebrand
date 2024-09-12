@@ -1,3 +1,5 @@
+//https://www.youtube.com/watch?v=6YnryDjEGr8
+
 import React from "react";
 import "./Products.css";
 import prod1 from "../assets/2DF_200.jpg";
@@ -6,6 +8,8 @@ import prod3 from "../assets/2DF_200 (1).jpg";
 import prod4 from "../assets/2DF_200 (2).jpg";
 import Sticker from "../assets/50.png";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const vitaminProducts = [
   {
@@ -66,6 +70,14 @@ const vitaminProducts = [
   },
 ];
 
+const settings = {
+  // dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1
+};
+
 function Products() {
   return (
     <div>
@@ -76,9 +88,10 @@ function Products() {
           </h2>
         </div>
         <div className="products">
-          <ul>
+          {/* <ul> */}
+            <Slider {...settings}>
             {vitaminProducts.map((product, pindex) => (
-              <li id={pindex}>
+              // <li id={pindex}>
                 <div className="product-padding">
                   <div className="product" id="prod1">
                     <img src={product.productImage} alt="prod1" />
@@ -105,9 +118,10 @@ function Products() {
                     <img className="sticker-50" src={Sticker} />
                   )}
                 </div>
-              </li>
+              // </li>
             ))}
-          </ul>
+            </Slider>
+          {/* </ul> */}
         </div>
         <div className="heading">
           <h2>

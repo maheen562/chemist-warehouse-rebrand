@@ -6,12 +6,11 @@ const Subscribe = () => {
     <div>
       <div className="border">
         <div className='email-bar'>
-            <div className='email-input'>
-
-            </div>
-            <div className='subscribe-button'>
-
-            </div>
+            <input placeholder="Email" className='email-input'>
+            </input>
+            <button className='subscribe-button'>
+                Subscribe
+            </button>
         </div>
       </div>
     </div>

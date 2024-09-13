@@ -1,0 +1,15 @@
+.footer{
+    background-color: red;
+    width: 100vw;
+    height: 175px;
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.span-link{
+    color: blue;
+    text-decoration: dashed;
+}

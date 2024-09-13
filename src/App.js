@@ -3,6 +3,7 @@ import Header from './components/Header';
 import AddBanner from './components/AddBanner';
 import Products from './components/Products';
 import Subscribe from './components/Subscribe';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <AddBanner />
       <Products />
       <Subscribe />
+      <Footer />
     </div>
   );
 }

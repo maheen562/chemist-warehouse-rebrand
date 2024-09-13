@@ -63,7 +63,7 @@ function Header() {
       </div>
       <div className="below-header">
         <ul>
-          <li>
+          <li className="each-below-header">
             <img src={delivery} alt="delivery truck" />
             <div>
               <p>
@@ -76,7 +76,7 @@ function Header() {
               </p>
             </div>
           </li>
-          <li>
+          <li className="each-below-header">
             <img src={collect} alt="click & collect logo" />
             <div>
               <p>
@@ -89,7 +89,7 @@ function Header() {
               </p>
             </div>
           </li>
-          <li><img src={tracker} alt="delivery" />
+          <li className="each-below-header"><img src={tracker} alt="delivery" />
             <div>
               <p>
                 <a href="">RELIABLE </a>{" "}

@@ -5,6 +5,10 @@
 
 }
 
+.each-below-header{
+    width: 33vw;
+}
+
 .header_left{
     justify-content: left;
     width: 30vw;

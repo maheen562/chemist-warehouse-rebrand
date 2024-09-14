@@ -175,7 +175,7 @@ function Products() {
       <div className="product-container">
         <div className="heading">
           <h2>
-            Buy our <span>PREMIUM Vitamins </span>Range
+            our <span>PREMIUM Vitamins </span>Range
           </h2>
         </div>
         <div className="products-container">

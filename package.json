@@ -1,6 +1,6 @@
 {
-  "homepage": "https://maheen562.github.io/chemist-warehouse-rebrand/",
   "name": "chemist-warehouse-rebrand",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

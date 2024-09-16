@@ -1,4 +1,4 @@
-#Student Rebranding Project build in React
+### Student Rebranding Project build in React
 
 You can view it on https://main.d1ed1coyt7sq63.amplifyapp.com/
 
